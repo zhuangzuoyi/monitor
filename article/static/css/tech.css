@@ -1,0 +1,133 @@
+body{
+    background-color:  rgb(249,249,249);
+    /* border: 1px solid rgb(176, 194, 176); */
+}
+/* @media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+} */
+
+#tech_continer{
+    background-color: white;
+	border: 1px solid rgb(238,238,238);
+    margin: 40px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 25px 70px 20px 70px; 
+    height: 500px;
+    border-radius: 10px;
+}
+.item{
+    padding: 0px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.link{
+    display: inline;
+}
+.category{
+    float: right;
+    font-size:18px;
+    color:gray;
+    margin-right: 30px;
+}
+
+.time{
+    float:right;
+    font-size:18px;
+    color:gray;
+}
+
+hr{
+    height:1px;
+    border:none;
+    border-top:1px dashed black;
+}
+
+a {
+    display:inline;
+    /* font-size:24px; */
+    font-size: 1.5em;
+}   
+/* //未访问：蓝色、无下划线  */
+a:link {
+    /* color: blue;  */
+    color:rgb(66,139,202);
+    text-decoration:none;
+}   
+/* //激活：红色    */
+a:active{
+    color: red;
+} 
+/* //已访问：紫色、无下划线    */
+a:visited {
+    color:rgb(66,139,202);
+
+    /* color:purple; */
+    text-decoration:none;
+} 
+/* //鼠标移近：红色、下划线   */
+a:hover {
+    /* color: red;  */
+    color:purple;
+    text-decoration:underline;
+} 
+
+
+/* @-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+} */
+
+@media (max-width: 800px){
+    #tech_continer{
+            margin: 0 7.6%;
+            padding: 0 5%;
+            /* background-color: aqua; */
+    }
+}
+
+@media (max-width: 650px){
+    #tech_continer{
+            margin: 0;
+            /* background-color: aquamarine; */
+    }
+    .category{
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px){
+    #tech_continer{
+        /* background-color: blanchedalmond; */
+    }
+    .category{
+        display: none;
+    }
+
+    .time{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    #tech_continer{
+        /* background-color: rgb(80,80,80); */
+    }
+
+    .category{
+        display: none;
+    }
+
+    .time{
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>arduino WS2812 红外遥控</title>
+		<link rel="stylesheet" type="text/css" media="all" href="./../../static/css/style.css">
+		<link rel="stylesheet" href="./../../static/css/highlight.css">
+	</head>
+	<body class="post-template-default single single-post postid-14 single-format-standard logged-in admin-bar single-author singular two-column left-sidebar customize-support">
+		<div id="page" class="hfeed">
+			<div id="main">
+				<div id="primary">
+					<div id="content" role="main">		
+						<article id="post-14" class="post-14 post type-post status-publish format-standard hentry category-18">
+							<header class="entry-header">
+								<h1 class="entry-title">arduino WS2812 红外遥控</h1>
+							</header>
+							<div class="entry-content">
+                               
+<!---  content start    -->
+<p>几个月前就想过做个可以用红外遥控器控制WS2812灯条/环显示不同内容的小东西，需要的模块已经买了，一个红外遥控套件，arduino pro mini、一个有12个WS2812灯珠的圆环，最近几天终于把这个给做了。</p>
+<p>硬件非常简单，只需用到Arduino 2个IO口：</p>
+<pre>
+	<code>
+		IO 11  
+        |  ------>  IR RECEIVE
+arduino |   IO 3
+        |  ------>  WS2812 DATA
+	</code>
+</pre>
+<p>
+	可惜，组装前忘了拍照了，只有组装后的样子，就是太难看了，审美还是硬伤，因为这LED灯太亮了，肯定对眼睛不好，就把WS2812B灯环贴在了块白色PVC板（应该是跟PVC水管相同的材料）上，效果还是挺不错的，
+</p>
+
+<p >
+	<img src="./arduino_0101.jpg">
+</p>
+
+<p >
+	<img src="./arduino_0102.jpg">
+</p>
+
+<div class="video-responsive video-responsive-4-3">
+	<iframe src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f4a0000bg9ht4kttc5ivv20pj20&amp;line=0"
+	  frameborder="0" allowfullscreen></iframe>
+  </div>
+<!---  content end   -->
+</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<footer id="colophon" role="contentinfo">
+				<div id="site-generator">By Halin</div>
+			</footer>
+		</div>
+	</body>
+</html>
